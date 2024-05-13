@@ -1,0 +1,18 @@
+Output of nodejs 
+
+/**
+ * Cycle1:Phase1: Top Level Code
+ * Cycle1:PromisePhase: this will be called between Phases tick for this example it will be called between Phase1 and Phase2
+ * Cycle1:Phase2: setTimeout Top
+ * Cycle1:Phase4: setImmediate Top as we don`t have any Phase 3:IO before this that is why it get printed first
+ * Cycle2:Phase3: I/O filed read!!, All Phase3:IO:Async will be registred for Execution
+ * Cycle2:Phase4: setImmediateTimeout, this will be printed after Phase3:IO call
+ * Cycle3:Phase2: setTimeout Inner-> As we are already at Phase 3 this will be Skipked in Cycle 2 and Cycle2:Phase4 will be displayed 
+ * 745ms Registered at Cycle2 called at Cycle4:Phase3:Async Thread1
+ * 746ms Registered at Cycle2 called at Cycle4:Phase3:Async Thread2
+ * 764ms Registered at Cycle2 called at Cycle4:Phase3:Async Thread4
+ * 767ms Registered at Cycle2 called at Cycle4:Phase3:Async Thread3
+ * 1460ms Registered at Cycle2 called at Cycle4:Phase3:Async Thread5
+ * 1461ms Registered at Cycle2 called at Cycle4:Phase3:Async Thread6
+ * Cycle5:Last Statement Phase:2
+ */
