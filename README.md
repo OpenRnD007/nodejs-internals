@@ -1,3 +1,10 @@
+# Node.js Internals
+
+This repository is dedicated to exploring and understanding the internal mechanisms of Node.js. It serves as a resource for those looking to dive deep into the core functionalities and architecture of Node.js.
+
+## Overview
+
+`nodejs-internals` provides an in-depth analysis of Node.js features, including the event loop, asynchronous operations, modules, and the Node.js runtime environment. The goal is to offer insights that can help developers optimize their applications and contribute to the Node.js ecosystem.
 
 # Nodejs Internal Working (Lecture)
 
